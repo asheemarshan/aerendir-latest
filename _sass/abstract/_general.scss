@@ -1,0 +1,120 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: $base-font;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+:focus {
+	outline: 0;
+}
+
+a:focus {
+	outline: none;
+	outline-offset: 0px;
+}
+
+/*Slick Slider*/
+
+.slick-slide {
+	a {
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+
+.slide {
+	a {
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+
+input[type='text'],
+input[type='button'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	/* Safari */
+	-moz-appearance: none;
+	/* Fire Fox */
+	text-indent: 1px;
+	text-overflow: '';
+	outline: none;
+}
+
+/*Select Option*/
+
+select {
+	-webkit-appearance: none;
+	/* Safari */
+	-moz-appearance: none;
+	/* Fire Fox */
+	text-indent: 1px;
+	text-overflow: '';
+	outline: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+/*Media Queries*/
+
+/*Ipad Landscape*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+	main {
+		// margin-top: 90px;
+	}
+}
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+	main {
+		margin-top: 50px;
+	}
+}
+
+/*Mobile Landscape*/
+
+@media (max-width: 767px) and (orientation: landscape) {
+}

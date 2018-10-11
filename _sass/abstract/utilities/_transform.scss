@@ -1,0 +1,5 @@
+@mixin transform($value) {
+	transform: $value;
+	-moz-transform: $value;
+	-webkit-transform: $value;
+}

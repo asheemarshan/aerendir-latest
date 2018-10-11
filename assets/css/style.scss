@@ -1,0 +1,49 @@
+---
+# Scss files
+---
+
+
+@import 'vendors/bootstrap';
+@import 'vendors/slick-theme';
+@import 'vendors/slick';
+@import 'vendors/font-awesome';
+
+@import 'abstract/var';
+@import 'abstract/utilities';
+@import 'abstract/button';
+@import 'abstract/general';
+@import 'abstract/overides';
+@import 'abstract/typography';
+
+
+@import 'layouts/header';
+@import 'layouts/footer';
+
+
+
+
+
+
+
+
+
+@import 'components/blog-pagination';
+
+@import 'components/testimonial-industry';
+@import 'components/key-features-industry';
+@import 'components/services-solution-industry';
+@import 'components/tab-navigation';
+@import 'components/home-banner';
+@import 'components/unique-block';
+@import 'components/forms';
+@import 'components/noval-solutions';
+@import 'components/solution-maps';
+@import 'components/unique-technology';
+@import 'components/biometric-box-wrapper';
+@import 'components/identification-home';
+@import 'components/logo-slider-home';
+@import 'components/featured-blogs';
+@import 'components/blogs';
+
+@import 'components/blog-banner';
+@import 'components/blog-inner';

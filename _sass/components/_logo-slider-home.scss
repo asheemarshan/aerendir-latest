@@ -1,0 +1,26 @@
+.logo-section-home{
+  position:relative;
+  .logo-section-home-wrapper {
+    padding-top:65px;
+    .logo-slider-wrapper {
+      .logo-img-home {
+        height: 122px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 220px;
+      height: 479px;
+      display: block;
+      top: 109px;
+      right: 0;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url(../images/home/logo-before-img.png);
+      background-position: top right;
+      z-index: 1;
+    }
+  }
+}

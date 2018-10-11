@@ -1,0 +1,90 @@
+.blog-banner{
+    background-image: url(../../assets/images/banner.png);
+     min-height: 325px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    padding-top: 71px;
+    h2{
+        @extend %h2-banner-heading-text;
+        padding-top: 22px;
+    }
+    h3{
+        @extend %h3-banner-heading-text;
+        letter-spacing: -1.8px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .blog-banner {
+        display: block;
+        padding: 40px 30px 20px 30px;
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 23px;
+            line-height: 1.5;
+        }
+        .button-wrapper {
+            padding-top: 23px;
+        }
+    }
+    .btn {
+        margin-left: 4px;
+    }
+}
+
+/*Ipad Portrait*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-banner {
+        display: block;
+        min-height: 350px;
+        overflow-x: hidden;
+        margin-bottom: 20px;
+        img {
+            widows: 100%;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 23px;
+        }
+        .button-wrapper {
+            padding-top: 23px;
+        }
+    }
+    .btn {
+        margin-left: 4px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-banner {
+        display: block;
+        min-height: 350px;
+        overflow-x: hidden;
+        margin-bottom: 20px;
+        img {
+            widows: 100%;
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            letter-spacing: 2.3px;        }
+        h3 {
+            font-size: 23px;
+        }
+        .button-wrapper {
+            padding-top: 23px;
+        }
+    }
+    .btn {
+        margin-left: 4px;
+    }
+}

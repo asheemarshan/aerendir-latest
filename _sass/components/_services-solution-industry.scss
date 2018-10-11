@@ -1,0 +1,107 @@
+.our-services-soln-industry{
+  background: url(../images/soln-industry-down.png) right bottom no-repeat, url(../images/soln-industry-up.png) left top repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 142px 0 147px;
+  margin-bottom:40px;
+  h3{
+    @extend %h1-left-dark;
+    text-align: center;
+    color:$white;
+  }
+  .service-industry-slider-outer-wrapper{
+    padding-top:63px;
+    .industry-services-slider-wrapper{
+      width:320px;
+      background-color: $white;
+      text-align: center;
+      border-radius:4px;
+      padding:40px 40px 35px 40px;
+      h4{
+        @extend %body-small;
+        font-size:20px;
+        font-weight:$semi-bold;
+        letter-spacing: -1.02px;
+        padding-bottom:9px;
+      }
+      p{
+        @extend %h4-center;
+        font-size:15px;
+        font-weight:$normal;
+      }
+      .industry-service-img{
+        width:60px;
+        height:60px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-bottom:20px;
+
+      }
+    }
+  }
+  .solution-industry-section-wrapper{
+    background-color:$metallic-blue;
+
+    h3{
+      padding-top: 6px;
+      letter-spacing: -2.02px;
+    }
+  }
+
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-services-soln-industry{
+    background:none;
+    padding: 0px 0 0px;
+    h3{
+      font-size: 30px;
+      padding-top:25px;
+    }
+    .service-industry-slider-outer-wrapper{
+      padding-top:20px;
+      .industry-services-slider-wrapper{
+        width:100%;
+        padding:20px;
+        h4{
+          font-size: 13px;
+        }
+        p{
+          font-size:11px;
+        }
+      }
+    }
+    .solution-industry-section-wrapper{
+      padding-bottom:25px;
+    }
+
+  }
+}
+@media (max-width: 767px) {
+  .our-services-soln-industry{
+    background:none;
+    padding: 0px 0 0px;
+    h3{
+      font-size: 30px;
+      padding-top:25px;
+    }
+    .service-industry-slider-outer-wrapper{
+      padding-top:20px;
+      .industry-services-slider-wrapper{
+        width:100%;
+        padding:20px;
+        h4{
+          font-size: 13px;
+        }
+        p{
+          font-size:11px;
+        }
+      }
+    }
+    .solution-industry-section-wrapper{
+      padding-bottom:25px;
+    }
+
+  }
+}

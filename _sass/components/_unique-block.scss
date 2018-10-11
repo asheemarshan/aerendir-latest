@@ -1,0 +1,140 @@
+
+.totally-unique-section {
+  padding-bottom: 80px;
+  background-image: url(../images/unique-bg-down.png);
+  background-position: bottom -512px right;
+  background-repeat: no-repeat;
+
+  .unique-box-wrapper {
+    margin-top: 7px;
+    .img-unique {
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 360px;
+      background-size: cover;
+      width: 100%;
+      margin-top: 6px;
+    }
+
+    h3 {
+      @extend %h1-left-dark;
+      //      padding-bottom: 4px;
+      //      padding-top: 34px;
+      letter-spacing: -3.02px;
+    }
+    p {
+      @extend %paragraphs;
+      padding-bottom: 42px;
+    }
+
+  }
+  .right {
+    .content-wrapper {
+      padding-left: 115px !important;
+      padding-top: 42px;
+      padding-bottom: 30px;
+    }
+
+  }
+  .left {
+    .content-wrapper {
+      padding-right: 115px !important;
+
+    }
+  }
+  .img-three {
+    padding-top: 30px;
+  }
+}
+
+
+
+
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .totally-unique-section {
+    padding-bottom: 30px;
+    .unique-box-wrapper {
+      margin-top: 0px;
+
+      h3 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 14px;
+        padding-bottom: 0;
+      }
+      .img-unique {
+        width: 82%;
+        margin: 0 auto;
+        height: 425px;
+
+      }
+
+    }
+    .right {
+      .content-wrapper {
+        padding-left: 15px !important;
+        display: block;
+        height: 224px;
+        min-height: 224px;
+        padding-top: 5px;
+
+      }
+
+    }
+    .left {
+      .content-wrapper {
+        padding-right: 0px !important;
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+//767 styling
+@media (max-width: 767px) {
+
+  .totally-unique-section {
+    padding-bottom: 30px;
+    .unique-box-wrapper {
+      margin-top: 0px;
+
+      h3 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
+      .img-unique {
+        width: 82%;
+        margin: 0 auto;
+      }
+
+    }
+    .right {
+      .content-wrapper {
+        padding-left: 15px !important;
+        display: block;
+        height: 342px;
+        min-height: 320px;
+        padding-top:0;
+
+      }
+
+    }
+    .left {
+      .content-wrapper {
+        padding-right: 0px !important;
+        display: block;
+
+      }
+    }
+    .img-three{
+      padding-top:0;
+    }
+  }
+}

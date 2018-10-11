@@ -1,0 +1,112 @@
+%h2-banner-heading-text {
+  font-family: $base-font;
+  font-size: 40px;
+  font-weight: $bold;;
+  letter-spacing: -2.7px;
+  text-align: center;
+  color: $white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25)
+}
+
+
+%h3-banner-heading-text{
+  font-family: $base-font;
+  font-size: 27px;
+  font-weight: $normal;;
+  letter-spacing: -2.7px;
+  text-align: center;
+  color: $white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25)
+}
+
+%h1-left-dark{
+  font-family: $base-font;
+  font-size: 38px;
+  font-weight: $light;;
+  letter-spacing: -1.2px;
+  color: $dark-grey-blue;
+}
+
+%paragraphs{
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: $normal;
+  color: $metallic-blue;
+}
+
+%navigation-text{
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: $normal;
+  color: $dark-grey-blue;
+  text-transform: uppercase;
+}
+
+%h4-center{
+  font-family: $base-font;
+  font-size: 20px;
+  font-weight: $semi-bold;
+  color: $dark-grey-blue;
+}
+
+%body-small{
+  font-family: $base-font;
+  font-size: 15px;
+  font-weight: $normal;
+  color: $metallic-blue;
+}
+%terms{
+  font-family: $base-font;
+  font-size: 13px;
+  font-weight: $normal;
+  color: $blue-gray;
+}
+%h3-left-dark{
+  font-family: $base-font;
+  font-size: 24px;
+  font-weight: $normal;
+  color: $blue-gray;
+}
+%h4-left-dark{
+  font-family: $base-font;
+  font-size: 20px;
+  font-weight:$semi-bold;
+  letter-spacing: -0.6px;
+  color: $dark-grey-blue;
+}
+%testimonial-heading{
+  font-family: $base-font;
+  font-size: 30px;
+  font-weight:$normal;
+  letter-spacing: -0.9px;
+  color: $white;
+}
+%h5-left-dark {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: $semi-bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: $dark-grey-blue;
+}
+%shares{
+  font-family: $base-font;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: $metallic-blue;
+}
+%h2-left-dark {
+  font-family: $base-font;
+  font-size: 30px;
+  font-weight: $light;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}

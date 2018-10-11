@@ -1,0 +1,120 @@
+.identification-home {
+  background-image: url(../images/home/identification-home.png);
+  background-position: bottom -269px right;
+  background-repeat: no-repeat;
+  position:relative;
+  .identification-home-wrapper {
+
+    .identification-home-image-wrapper {
+      width: 594px;
+      height: 399px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 20px;
+      box-shadow: -4px 3px 25px 0 rgba(71, 82, 115, 0.35);
+    }
+
+    .graph-content-wrapper-home {
+      h4 {
+        @extend %h4-center;
+        padding-bottom: 15px;
+      }
+      p {
+        @extend %paragraphs;
+        padding-bottom: 40px;
+      }
+    }
+
+  }
+
+  .binary-library-wrapper {
+    .img-identity-wrapper {
+      padding-top:50px;
+      .img-identity {
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        display:inline-block;
+      }
+      h4 {
+        @extend %h4-center;
+        padding-bottom: 15px;
+        display:inline;
+        padding-left:10px;
+      }
+
+    }
+    p {
+      @extend %paragraphs;
+      font-size: 15px;
+      text-align: left;
+      line-height: 1.6;
+      width:205px;
+      padding-top:16px;
+
+    }
+  }
+
+  &:before{
+    content:'';
+    width: 400px;
+    height: 828px;
+    display: block;
+    top: -344px;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../images/home/Mask.png);
+    background-position: top left;
+    z-index: -1;
+  }
+
+}
+/*ipad landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .identification-home {
+    .identification-home-wrapper {
+      .identification-home-image-wrapper{
+        width: 100%;
+      }
+    }
+  }
+}
+//767 styling
+@media (max-width: 767px) {
+  .identification-home {
+    .identification-home-wrapper {
+      .identification-home-image-wrapper{
+        width: 90%;
+      }
+    }
+
+    .binary-library-wrapper {
+      p{
+        width: 89%;
+        text-align: center
+      }
+
+    }
+
+     .binary-library-wrapper{
+       .img-identity-wrapper{
+         margin: 0 auto;
+         text-align: center;
+       }
+     }
+
+  }
+}
+
+@media (min-width: 1499px) {
+
+}

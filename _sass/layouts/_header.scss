@@ -1,0 +1,268 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+  padding-bottom: 10px;
+  padding-top: 25px;
+  float: right;
+  display: inline-block;
+  padding-right: 2%;
+}
+
+.menu-mobile {
+  display: none;
+  padding: 20px;
+  &:after {
+    content: "\f394";
+    font-family: "Ionicons";
+    font-size: 2.5rem;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-25%);
+  }
+}
+
+.menu-dropdown-icon {
+  &:before {
+    content: "\f489";
+    font-family: "Ionicons";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+  }
+}
+
+.menu {
+  > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    float: right;
+    //position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    > li {
+      float: left;
+      padding: 0;
+      margin: 0;
+      margin-top: 21px;
+      letter-spacing:-0.02px;
+      a {
+        @extend %navigation-text;
+        text-decoration: none;
+        padding: 6px 11.5px;
+        display: block;
+        padding-left: 15.5px;
+        padding-top: 9px;
+      }
+      &:hover {
+        color: $dark-sky-blue;
+      }
+      > ul {
+        display: none;
+        width: 100%;
+        background:$white;
+//        padding: 20px;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        margin: 0;
+        list-style: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &:before,
+        &:after {
+          content: "";
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+        > li {
+          margin: 0;
+          padding-bottom: 0;
+          list-style: none;
+          width: 25%;
+          background: none;
+          float: left;
+          a {
+            color: #777;
+            padding: .2em 0;
+            width: 95%;
+            display: block;
+            border-bottom: 1px solid #ccc;
+          }
+          > ul {
+            display: block;
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            &:before,
+            &:after {
+              content: "";
+              display: table;
+            }
+            &:after {
+              clear: both;
+            }
+            > li {
+              float: left;
+              width: 100%;
+              padding: 10px 0;
+              margin: 0;
+              font-size: .8em;
+              a {
+                border: 0;
+              }
+            }
+          }
+        }
+        &.normal-sub {
+          width: 300px;
+          left: auto;
+//          padding: 10px 20px;
+          > li {
+            width: 100%;
+            a {
+              border: 0;
+              padding: 20px;
+            }
+            &:hover{
+              background-color:$green-blue;
+              a{
+                color:$white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .banner-learn-more {
+      color: $white;
+      padding: 8px 63px 8px 61px;
+      margin-left: -1px;
+      letter-spacing: -1.02px;
+    }
+  }
+}
+
+.navbar-brand {
+  float: left !important;
+  padding: 9px 0px !important;
+  height: auto !important;
+ img{
+   padding:0 51px;
+ }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-dropdown-icon {
+    &:before {
+      display: block;
+    }
+  }
+  .menu {
+    > ul {
+      display: none;
+      > li {
+        width: 100%;
+        float: none;
+        display: block;
+        a {
+          padding: 1.5em;
+          width: 100%;
+          display: block;
+        }
+        > ul {
+          position: relative;
+          &.normal-sub {
+            width: 100%;
+          }
+          > li {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+            &:first-child {
+              margin: 0;
+            }
+            > ul {
+              position: relative;
+              > li {
+                float: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .show-on-mobile {
+      display: block;
+    }
+  }
+}
+//767 styling
+@media (max-width: 767px) {
+  .menu-mobile{
+    margin-top: -101px;
+  }
+
+  .menu {
+    > ul {
+      .banner-learn-more{
+        width: 56%;
+      }
+    }
+  }
+
+}
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-mobile{
+    margin-top: -101px;
+  }
+
+  .menu {
+    > ul{
+      .banner-learn-more{
+        width: 23%;
+      }
+    }
+}
+}
+@media (min-width: 1499px) {
+  .menu-container {
+  padding-left: 2%;
+  }
+}

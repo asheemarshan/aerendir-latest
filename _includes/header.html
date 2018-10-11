@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Aerendir
+</title>
+
+<!--favicon-->
+<link rel="shortcut icon" href="{{'./assets/images/icons/Fevicon.png' | relative_url}}" />
+<link rel="apple-touch-icon" href="{{'./assets/images/icons/Fevicon.png' | relative_url}}" />
+<link rel="shortcut icon" href="{{'./assets/images/icons/Fevicon.png' | relative_url}}" />
+<link rel="icon" href="{{'./assets/images/icons/Fevicon.png' | relative_url}}" type="image/ico" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{'./assets/css/ionicons.min.css' |relative_url }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<header>
+    <!--<div class="container">-->
+    <div class="row">
+        <a class="navbar-brand" href="/">
+            <img src="{{'./assets/images/aerendir-logo.jpg' | relative_url }}" alt="">
+        </a>
+
+        <div class="menu-container">
+            <h1 class="hidden"></h1>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a>{{ site.data.navigation-1.topic[0].title }}</a>
+                        <ul>
+                            <li><a href="{{ site.data.navigation-1.topic[0].subfolderitems[0].url }}">{{
+                                    site.data.navigation-1.topic[0].subfolderitems[0].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[0].subfolderitems[1].url }}">{{
+                                    site.data.navigation-1.topic[0].subfolderitems[1].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[0].subfolderitems[2].url }}">{{
+                                    site.data.navigation-1.topic[0].subfolderitems[2].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[0].subfolderitems[3].url }}">{{
+                                    site.data.navigation-1.topic[0].subfolderitems[3].page }}</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>{{ site.data.navigation-1.topic[1].title }}</a>
+                        <ul>
+                            <li><a href="{{ site.data.navigation-1.topic[1].subfolderitems[0].url }}">{{
+                                    site.data.navigation-1.topic[1].subfolderitems[0].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[1].subfolderitems[1].url }}">{{
+                                    site.data.navigation-1.topic[1].subfolderitems[1].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[1].subfolderitems[2].url }}">{{
+                                    site.data.navigation-1.topic[1].subfolderitems[2].page }}</a></li>
+                            <li><a href="{{ site.data.navigation-1.topic[1].subfolderitems[3].url }}">{{
+                                    site.data.navigation-1.topic[1].subfolderitems[3].page }}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{	site.data.navigation-2.docs[0].url }}">{{ site.data.navigation-2.docs[0].title }}</a></li>
+                    <li><a href="{{	site.data.navigation-2.docs[1].url }}">{{ site.data.navigation-2.docs[1].title }}</a></li>
+                    <li><a href="{{	site.data.navigation-2.docs[2].url }}">{{ site.data.navigation-2.docs[02].title }}</a></li>
+                    <li><a href="{{	site.data.navigation-2.docs[3].url }}">{{ site.data.navigation-2.docs[03].title }}</a></li>
+                    <li><a href="http://marioloncarek.com"> <img src="{{'./assets/images/6-f.png' | relative_url}}" alt=""></a>
+                    <li><a href="{{ page.url }}" class="banner-learn-more">Learn More</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+</header>

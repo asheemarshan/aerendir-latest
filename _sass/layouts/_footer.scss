@@ -1,0 +1,326 @@
+footer {
+  background-image: url(../images/footer.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 314px 0 0px;
+  padding-bottom: 0px;
+
+  p {
+    @extend %navigation-text;
+    color: $blue-gray;
+    text-transform: none;
+  }
+
+  .social-media-wrapper {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    ul {
+      display: inline-block;
+      padding-top: 0px;
+      padding-bottom: 16px;
+      li {
+        padding-right: 20px;
+        display: inline-block;
+        @extend %terms;
+        a {
+          @extend %terms;
+          text-decoration: none !important;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    p {
+      margin-bottom: 3px;
+      margin-top: 8px;
+    }
+  }
+  //  form-wrapper-footer
+  .form-wrapper-footer {
+    background-image: url(../images/Request-box.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 288px;
+    margin-top: 31px;
+    margin-left: -8px;
+
+    h3 {
+      @extend %h1-left-dark;
+      padding-top: 37px;
+      text-align: center;
+      margin-bottom: 13px;
+    }
+    p {
+      text-align: center;
+      padding-bottom: 20px;
+      line-height: 18px;
+      letter-spacing: -0.02px;
+      padding-left: 10px;
+    }
+
+    .form-group {
+      width: 81%;
+      float: right;
+      margin-bottom: 9px;
+    }
+    .right-form-group {
+      float: left;
+    }
+    .banner-learn-more-footer {
+      display: block;
+      width: 82%;
+      text-align: center;
+    }
+  }
+  .footer-top-para {
+    p {
+      padding-top: 7px;
+      line-height: 23px;
+      padding-bottom: 29px;
+    }
+  }
+  .footer-top-one {
+    padding-left: 14px !important;
+  }
+
+.radio-wrapper{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .radiomark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .radio-wrapper{
+  &:hover{
+    input{
+      ~ {
+        .radiomark{
+          background-color: #ccc;
+        }
+      }
+
+
+      &:checked{
+        .check-mark{
+          background-color: #2196F3;
+        }
+      }
+    }
+  }
+}
+
+
+}
+  .modal-dialog {
+    top: 26%;
+    .modal-body {
+      position: relative;
+      padding: 71px 10px 100px 126px;
+      //    margin: 0 auto;
+      //    text-align: center;
+      font-family: $base-font;
+      font-size: 16px;
+      font-weight: $normal;
+      color: $metallic-blue;
+
+      input[type=radio] {
+        margin: 19px 0 0;
+      }
+      h4 {
+        @extend %h1-left-dark;
+        font-size: 23px;
+      }
+    }
+  }
+  .container{
+    padding-bottom: 12px;
+  }
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding: 50px 0 50px;
+    background-size:cover;
+    background-position: bottom center;
+
+    .social-media-wrapper {
+      display: inline-block;
+      ul {
+        padding-bottom: 9px;
+        li {
+          padding-right: 10px;
+        }
+      }
+    }
+    //  form-wrapper-footer
+    .form-wrapper-footer {
+      height: 286px;
+      margin-top: 21px;
+      margin-left: 0px;
+      background-position:bottom center;
+      background-size: cover;
+      background:transparent;
+      h3 {
+
+        padding-top: 17px;
+      }
+      p {
+        padding-left: 0px;
+      }
+
+      .form-group {
+        float: none;
+        margin: 0 auto;
+
+        input{
+          width: 100%;
+          margin-bottom:20px;
+        }
+      }
+      .right-form-group {
+        float: none;
+      }
+      .banner-learn-more-footer {
+        display: inline-block;
+        width: 24%;
+      }
+      h3{
+        color:$white;
+      }
+    }
+    .footer-top-para {
+      p {
+        padding-bottom: 9px;
+        padding-top: 7px;
+      }
+    }
+    .footer-top-one {
+      padding-left: 50px !important;
+      padding-top: 200px;
+    }
+    .button-wrapper {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p{
+      font-size:11px;
+      line-height:16px;
+    }
+    .learn-more-footer-wrapper{
+      padding-top: 105px;
+    }
+  }
+}
+
+//767 styling
+@media (max-width: 767px) {
+  footer {
+    background:$metallic-blue;
+    padding: 75px 0 0px;
+
+    .social-media-wrapper {
+      display: inline-block;
+      ul {
+        padding-bottom: 9px;
+        li {
+          padding-right: 10px;
+        }
+      }
+    }
+    //  form-wrapper-footer
+    .form-wrapper-footer {
+      height: 286px;
+      margin-top: 21px;
+      margin-left: 0px;
+      background:transparent;
+
+      h3 {
+
+        padding-top: 0px;
+      }
+      p {
+        padding-left: 0px;
+      }
+
+      .form-group {
+        float: none;
+        margin: 0 auto;
+      }
+      .right-form-group {
+        float: none;
+      }
+      .banner-learn-more-footer {
+        display: inline-block;
+        width: 25%;
+      }
+    }
+    .footer-top-para {
+      p {
+        padding-bottom: 19px;
+      }
+    }
+    .footer-top-one {
+      padding-left: 50px !important;
+    }
+    .button-wrapper {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .learn-more-footer-wrapper{
+      padding-bottom: 50px;
+      h3{
+        color:$white;
+      }
+    }
+
+    .modal-dialog {
+      .modal-body{
+        padding-left: 17%;
+      }
+
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer{
+    background-position: bottom center;
+
+    .form-wrapper-footer {
+      .banner-learn-more-footer{
+        width: 90%;
+      }
+    }
+  }
+}
+@media (min-width: 1499px) {
+  footer{
+    background-position: top center;
+  }
+}

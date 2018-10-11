@@ -1,0 +1,112 @@
+.map-section-soln {
+  margin-bottom: 10px;
+  .img-noval {
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 0px;
+    width: 14px;
+    height: 30px;
+    vertical-align: text-top;
+  }
+
+  h3 {
+    @extend %h1-left-dark;
+    text-align: center;
+    padding-bottom: 27px;
+    padding-top: 56px;
+  }
+  h4 {
+    @extend %h3-left-dark;
+    color: $dark-grey-blue;
+    padding-top: 19px;
+    letter-spacing: -2.02px;
+    line-height: 25px;
+    padding-bottom: 16px;
+  }
+  h5 {
+    @extend %paragraphs;
+    padding-bottom: 9px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+  p {
+
+    display: inline-block;
+    line-height: 22px;
+    letter-spacing: -0.02px;
+    margin-left: -10px;
+    a {
+      @extend %paragraphs;
+      padding-left: 15px;
+      display: inline-block;
+      &:focus,
+      &:hover {
+        text-decoration: none !important;
+        color: $dark-sky-blue;
+      }
+    }
+  }
+  .map-content-wrapper {
+    background-color: #fcfcfc;
+    padding: 90px 73px 95px 63px;
+    border: solid 1px #f1f1f1;
+    width: 423px;
+    height: 396px;
+  }
+  .map-wrapper {
+    padding-top: 0px;
+  }
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .map-section-soln {
+    .img-noval {
+
+      padding-right: 16px;
+    }
+
+    h3 {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h4 {
+      padding-top: 19px;
+    }
+
+    .map-content-wrapper {
+      background-color: #fcfcfc;
+      padding: 40px 35px 35px 30px;
+      width: 100%;
+    }
+  }
+}
+
+//767 styling
+@media (max-width: 767px) {
+  .map-section-soln {
+    .img-noval {
+
+      padding-right: 16px;
+    }
+
+    h3 {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h4 {
+      padding-top: 19px;
+    }
+
+    .map-content-wrapper {
+      background-color: #fcfcfc;
+      padding: 40px 35px 35px 30px;
+      width: 100%;
+    }
+  }
+}

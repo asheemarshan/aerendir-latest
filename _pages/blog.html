@@ -1,0 +1,174 @@
+---
+layout: default
+title: About
+permalink: /blog/
+pagination:
+    enabled: true
+---
+
+<main id="content" role="main">
+
+    <body class="bg-img">
+        <section class="blog-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h2>Blog</h2>
+
+                        <h3>What’s New in AI, IoT, and Biometrics </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-blogs">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-clr">
+                    <div class="featured-blogs-box-wrapper">
+                        {% for post in site.posts %}
+                        {% if post.featured %}
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.img }}" />
+                            <div class="fetured-blog-content-wrapper">
+                                <h3>{{ post.title }}</h3>
+                                <p>
+                                    {{ post.description }}
+                                    {% endif %}
+                                </p>
+                                {% endfor %}
+                                <h6 class="banner-learn-more">Read More<h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-clr">
+                    <div class="fetured-blog-content-samll-wrapper">
+                        <a href="#">
+                            <h4>
+                                Biometrics Breakthrough
+                            </h4>
+                            <p>
+                                Praesent ac lacus pellentesque, ornare orci sed, fermentum justo. Phasellus eu
+                                sollicitudin
+                                quam. Sed sit amet sapien bibendum, convallis leo id, interdum nulla. Sed nec placerat
+                                sapien.
+                            </p>
+                            <h6>Read More<img src="/assets/images/blog/Fill 1.png">
+                                <h6>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-clr">
+
+                    <div class="fetured-blog-content-samll-wrapper">
+                        <a href="#">
+                            <h4>
+                                What are biometrics?
+                            </h4>
+                            <p>
+                                Vestibulum nisi libero, imperdiet quis egestas a, eleifend sed libero. Interdum et
+                                malesuada fames ac ante ipsum primis in faucibus. Nulla lacinia urna a ex posuere, et
+                                scelerisque lorem fermentum.
+                            </p>
+                            <h6>Read More<img src="/assets/images/blog/Fill 1.png">
+                                <h6>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section class="blogs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 ">
+                        <div class="blog-wrapper">
+                            <a href="#">
+                                <img src="/assets/images/blog-pic-one.png">
+                                <div class="blog-content-wrapper">
+                                    <h4>
+                                        What are biometrics?
+                                    </h4>
+                                    <p>
+                                        Praesent ac lacus pellentesque, ornare orci sed, fermentum justo. Phasellus eu
+                                        sollicitudin.
+                                    </p>
+                                    <h6 class="banner-learn-more">Read More</h6>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 ">
+                        <div class="blog-wrapper">
+                            <a href="#">
+                                <img src="/assets/images/blog/blog-pic-two.png">
+                                <div class="blog-content-wrapper">
+                                    <h4>
+                                        What are biometrics?
+                                    </h4>
+                                    <p>
+                                        Praesent ac lacus pellentesque, ornare orci sed, fermentum justo. Phasellus eu
+                                        sollicitudin.
+                                    </p>
+                                    <h6 class="banner-learn-more">Read More</h6>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 ">
+                        <div class="blog-wrapper">
+                            <a href="#">
+                                <img src="/assets/images/blog/blog-pic-three.png">
+                                <div class="blog-content-wrapper">
+                                    <h4>
+                                        What are biometrics?
+                                    </h4>
+                                    <p>
+                                        Praesent ac lacus pellentesque, ornare orci sed, fermentum justo. Phasellus eu
+                                        sollicitudin.
+                                    </p>
+                                    <h6 class="banner-learn-more">Read More</h6>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="blog-pagination">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-md-4 center-paginate">
+
+                    <ul class="pagination">
+                        <li class="img"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><img
+                                    src="../assets/images/blog/left-arrow.png"></a></li>
+                        {% if paginator.total_pages > 1 %}
+                        {% for trail in paginator.page_trail %}
+                        <li {% if page.url==trail.path %} {% endif %}>
+                            <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">
+                                {{ trail.num }}</a>
+                        </li>
+                        {% endfor %}
+                        {% endif %}
+
+                        <li class="img"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><img
+                                    src="../assets/images/blog/right-arrow.png"></a></li>
+                    </ul>
+                   
+
+                </div>
+            </div>
+        </section>
+    </body>

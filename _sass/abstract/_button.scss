@@ -1,0 +1,61 @@
+.banner-learn-more{
+
+}
+
+// button common
+%btn-all {
+  border-radius: 4px;
+  padding: 11px 16px;
+  font-family: $secondary-font;
+  font-size: 13px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+  box-shadow:0 3px 10px 0 rgba(255, 255, 255, 0.1);
+}
+
+//blue Button
+.banner-learn-more {
+  @extend %btn-all;
+  background-color: $dark-sky-blue;
+  color: $white;
+  border: none;
+  &:focus,
+  &:hover {
+    background-color: $black;
+    color: $white;
+    text-decoration: none !important;
+  }
+  a{
+    color:$white;
+    text-decoration: none !important;
+  }
+}
+//green tab button
+.industry-button {
+  @extend %btn-all;
+  background-color: $white;
+  color: $bluey-grey;
+  border-radius: 24px;
+  border: solid 2px $gray-1;
+  display: inline-block;
+  margin: 0 8px;
+  padding:11px 20px 8px 28px;
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: $normal;
+  margin-bottom: 23px;
+  text-transform: none;
+  &:focus,
+  &:hover {
+    background-color: $green-blue;
+    color: $white;
+    text-decoration: none !important;
+    border: solid 2px transparent;
+  }
+  a{
+    color:$white;
+    text-decoration: none !important;
+  }
+}

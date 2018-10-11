@@ -1,0 +1,33 @@
+.testimonial-industry {
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 341px;
+  background-size: cover;
+  width: 100%;
+  padding-top: 67px;
+  padding-bottom: 67px;
+
+  .testimonial-content-wrapper {
+    text-align: center;
+    h4 {
+      @extend %testimonial-heading;
+      font-style: italic;
+      padding-bottom:33px;
+      line-height: 42px;
+      letter-spacing: -2.3px;
+      font-weight:$light;
+    }
+    h6 {
+      @extend %h4-left-dark;
+      color: $white;
+    }
+    p {
+      @extend %navigation-text;
+      color: $white;
+      text-transform: none;
+      line-height: 27px;
+      letter-spacing: -1px;
+      font-weight:$semi-bold;
+    }
+  }
+}

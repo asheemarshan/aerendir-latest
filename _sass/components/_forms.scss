@@ -1,0 +1,82 @@
+.form-group {
+  width: 50%;
+
+  input {
+    width: 265px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: $white;
+    border: solid 1px $gray-1;
+  }
+  .error{
+    border: solid 1px red;
+  }
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: $base-font !important;
+  font-size: 14px !important;
+  line-height: 1.71 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: $pale-grey !important;
+  font-weight: $normal;
+
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: $base-font !important;
+  font-size: 14px !important;
+  line-height: 1.71 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: $pale-grey !important;
+  font-weight: $normal;
+}
+
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: $base-font !important;
+  font-size: 14px !important;
+  line-height: 1.71 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: $pale-grey !important;
+  font-weight: $normal;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: $base-font !important;
+  font-size: 14px !important;
+  line-height: 1.71 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: $pale-grey !important;
+  font-weight: $normal;
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-group {
+    input {
+      margin-bottom: 14px!important;
+
+    }
+  }
+}
+
+//767 styling
+@media (max-width: 767px) {
+  .form-group {
+
+    input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 14px;
+
+    }
+  }
+}

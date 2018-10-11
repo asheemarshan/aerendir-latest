@@ -1,0 +1,100 @@
+.home-banner {
+  background-image: url(../images/home-banner.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  min-height: 451px;
+  align-content: center;
+  align-items: center;
+  padding-top: 71px;
+
+  h2 {
+    @extend %h2-banner-heading-text;
+    margin-bottom: 0;
+    letter-spacing: -1.02px;
+    padding-left: 10px;
+
+  }
+  h3 {
+    @extend %h3-banner-heading-text;
+    margin-top: 12px;
+    margin-bottom: 17px;
+    line-height: 31px;
+    padding-left: 10px;
+    letter-spacing: -2.75px;
+  }
+  .button-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 53px;
+
+    .banner-learn-more {
+      color: $dark-sky-blue;
+      padding: 18px 50px;
+      background-color: $white;
+      &:focus,
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+  }
+
+}
+
+.btn {
+  margin-left: 64px;
+}
+
+
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-banner {
+    display: block;
+    padding: 20px 30px;
+    min-height: 350px;
+    overflow-x: hidden;
+
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+    .button-wrapper {
+      padding-top: 23px;
+
+    }
+
+  }
+  .btn {
+    margin-left: 4px;
+  }
+}
+
+//767 styling
+@media (max-width: 767px) {
+  .home-banner {
+    display: block;
+    padding: 20px 30px;
+    min-height: 500px;
+
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+    .button-wrapper {
+      padding-top: 23px;
+
+    }
+
+  }
+  .btn {
+    margin-left: 4px;
+  }
+}

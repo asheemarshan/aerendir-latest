@@ -1,0 +1,230 @@
+.noval-solutions {
+  background: url(../images/nova-soln-2.png) right bottom no-repeat, url(../images/nova-soln-1.png) left top repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 144px 0 136px;
+
+  .background-wrapper-soln {
+    background-color: #556d87;
+    .top-content-wrapper {
+      padding-top: 8px;
+      padding-bottom: 60px;
+      h3 {
+        @extend %h1-left-dark;
+        color: $white;
+        text-align: center;
+        letter-spacing: -1.62px;
+        margin-top: -7px;
+        line-height: 49px;
+        margin-bottom: 4px;
+      }
+    }
+
+    .box-wrapper-novel-solutions {
+      width: 320px;
+      padding: 40px;
+      background-color: $white;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      position: relative;
+      -webkit-transition: all 200ms ease-in;
+      -webkit-transform: scale(1);
+      -ms-transition: all 200ms ease-in;
+      -ms-transform: scale(1);
+      -moz-transition: all 200ms ease-in;
+      -moz-transform: scale(1);
+      transition: all 200ms ease-in;
+      transform: scale(1);
+
+      .img-noval {
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60px;
+        background-size: cover;
+        width: 60px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      h4 {
+        @extend %h4-center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 5px;
+
+      }
+      p {
+        @extend %body-small;
+        text-align: center;
+      }
+
+      &:hover {
+        box-shadow: 5px 5px 25px 0 #b3b3b3;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+      }
+    }
+    .align-items {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+//home page noval solution
+.noval-solution-home {
+  background: url(../images/home/noval-bg-home-down.png) right bottom no-repeat, url(../images/home/noval-bg-home.png) left top repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 144px 0 136px;
+
+  .background-wrapper-soln-home {
+    background-color: $gray-2;
+  }
+
+  .top-content-wrapper {
+    text-align: center;
+    h3 {
+      @extend %h1-left-dark;
+      text-align: center;
+      letter-spacing: -1.62px;
+      margin-top: -7px;
+      line-height: 49px;
+      margin-bottom: 4px;
+      color: $dark-grey-blue !important;
+    }
+
+    p{
+      @extend %body-small;
+      font-weight: $normal;
+      color:$dark-grey-blue;
+      strong {
+        @extend %body-small;
+        font-weight: $semi-bold;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*ipad landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .noval-solutions {
+    .background-wrapper-soln {
+      .box-wrapper-novel-solutions {
+        width: 307px;
+      }
+    }
+  }
+
+}
+
+/*Ipad Portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .noval-solutions {
+    padding: 75px 0 71px;
+
+    .background-wrapper-soln {
+      background-color: #556d87;
+      .top-content-wrapper {
+        padding-bottom: 25px;
+        h3 {
+          font-size: 31px;
+        }
+      }
+
+      .box-wrapper-novel-solutions {
+        width: 100%;
+        padding: 25px;
+
+        h4 {
+
+        }
+        p {
+
+        }
+      }
+      .align-items {
+        display: flex;
+      }
+    }
+  }
+}
+
+.background-wrapper-soln-home {
+  .background-wrapper-soln {
+    .top-content-wrapper{
+      h3{
+        padding-top: 35px
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1499px) {
+  .noval-solutions {
+    padding: 197px 0 189px;
+  }
+
+}
+
+//767 styling
+@media (max-width: 767px) {
+  .noval-solutions {
+    padding: 75px 0 71px;
+
+    .background-wrapper-soln {
+      background-color: #556d87;
+      .top-content-wrapper {
+        padding-bottom: 25px;
+        h3 {
+          font-size: 31px;
+          margin-top: 0;
+          padding-top:20px;
+        }
+      }
+
+      .box-wrapper-novel-solutions {
+        width: 100%;
+        padding: 25px;
+
+        h4 {
+
+        }
+        p {
+
+        }
+      }
+      .align-items {
+        display: block;
+      }
+    }
+  }
+
+  .background-wrapper-soln-home {
+    .background-wrapper-soln {
+      .top-content-wrapper{
+        h3{
+          padding-top: 35px
+        }
+      }
+    }
+
+  }
+
+
+}
+
+@media (min-width: 1499px) {
+  .noval-solutions {
+    padding: 197px 0 189px;
+  }
+}

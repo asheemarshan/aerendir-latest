@@ -1,0 +1,27 @@
+topic:
+  - title: NeuroPrint
+    subfolderitems:
+      - page: Smartphone & Portable Devices
+        url: /thing1.html
+      - page: Banking & Payment Companies
+        url: /thing2.html
+      - page: E-comm & M-comm
+        url: /thing3.html
+      - page: IoT, Access Control & Domotics
+        url: /widget1.html
+      - page: IoT ASIC & Chip Cards
+        url: /widget2.html
+      - page: Antibots
+        url: /widget3.html
+      - page: Medical Applications
+        url: /#/
+  - title: Company
+    subfolderitems:
+      - page: About
+        url: /piece1.html
+      - page: Leadership
+        url: /piece2.html
+      - page: Technology
+        url: /piece3.html
+      - page: Careers
+        url: /abc.com
